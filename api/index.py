@@ -1,10 +1,14 @@
+# 必要なモジュールの取り込み
 from flask import Flask
 
+# Flaskオブジェクトの生成 --- (*1)
 app = Flask(__name__)
 
-@app.route('/hello')
+# ルート( / )へアクセスがあった時の処理を記述 --- (*2)
+@app.route("/")
 def index():
-  return 'Hello World'
+  return 'aaaaaaaaaaaaaaaaaaaa'
 
-if __name__ == '__main__':
-  app.run(host='localhost', port=8080)
+# サーバーを起動 --- (*3)
+if __name__ == "__main__":
+    app.run(host='localhost', debug=True, port=8080)
