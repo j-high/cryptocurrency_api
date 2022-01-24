@@ -7,7 +7,7 @@ app = Flask(__name__)
 # ルート( / )へアクセスがあった時の処理を記述 --- (*2)
 @app.route("/")
 def index():
-  return 'aaaaaaaaaaaaaaaaaaaa'
+  return 'asafafa'
 
 # サーバーを起動 --- (*3)
 if __name__ == "__main__":
