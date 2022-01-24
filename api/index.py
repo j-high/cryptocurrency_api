@@ -5,12 +5,7 @@ import requests
 # Flaskオブジェクトの生成 --- (*1)
 app = Flask(__name__)
 
-# ルート( / )へアクセスがあった時の処理を記述 --- (*2)
-@app.route("/")
-def index():
-  return 'asafafa'
-
-@app.route("/", methods=['post'])
+@app.route("/get", methods=['post'])
 def getApi():
   return request.form.get('get_stock')
 
